@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: frb_statistics.aux
+The style file: mn2e.bst
+Database file #1: frb_statistics.bib
+Warning--empty publisher in 2014ira..book.....B
+You've used 21 entries,
+            2601 wiz_defined-function locations,
+            674 strings with 7732 characters,
+and the built_in function-call counts, 9709 in all, are:
+= -- 885
+> -- 794
+< -- 15
++ -- 276
+- -- 276
+* -- 953
+:= -- 1820
+add.period$ -- 0
+call.type$ -- 21
+change.case$ -- 177
+chr.to.int$ -- 21
+cite$ -- 22
+duplicate$ -- 236
+empty$ -- 351
+format.name$ -- 313
+if$ -- 1735
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 22
+newline$ -- 67
+num.names$ -- 84
+pop$ -- 142
+preamble$ -- 1
+purify$ -- 197
+quote$ -- 0
+skip$ -- 321
+stack$ -- 0
+substring$ -- 385
+swap$ -- 27
+text.length$ -- 2
+text.prefix$ -- 92
+top$ -- 0
+type$ -- 186
+warning$ -- 1
+while$ -- 78
+width$ -- 0
+write$ -- 208
+(There was 1 warning)
