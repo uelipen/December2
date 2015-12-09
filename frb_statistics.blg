@@ -4,45 +4,45 @@ The top-level auxiliary file: frb_statistics.aux
 The style file: mn2e.bst
 Database file #1: frb_statistics.bib
 Warning--empty publisher in 2014ira..book.....B
-You've used 21 entries,
+You've used 22 entries,
             2601 wiz_defined-function locations,
-            674 strings with 7732 characters,
-and the built_in function-call counts, 9709 in all, are:
-= -- 885
-> -- 794
+            679 strings with 8048 characters,
+and the built_in function-call counts, 10436 in all, are:
+= -- 944
+> -- 877
 < -- 15
-+ -- 276
-- -- 276
-* -- 953
-:= -- 1820
++ -- 306
+- -- 306
+* -- 1033
+:= -- 1957
 add.period$ -- 0
-call.type$ -- 21
-change.case$ -- 177
-chr.to.int$ -- 21
-cite$ -- 22
-duplicate$ -- 236
-empty$ -- 351
-format.name$ -- 313
-if$ -- 1735
+call.type$ -- 22
+change.case$ -- 191
+chr.to.int$ -- 22
+cite$ -- 23
+duplicate$ -- 247
+empty$ -- 367
+format.name$ -- 344
+if$ -- 1861
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 22
-newline$ -- 67
-num.names$ -- 84
-pop$ -- 142
+missing$ -- 23
+newline$ -- 70
+num.names$ -- 88
+pop$ -- 154
 preamble$ -- 1
-purify$ -- 197
+purify$ -- 212
 quote$ -- 0
-skip$ -- 321
+skip$ -- 341
 stack$ -- 0
-substring$ -- 385
-swap$ -- 27
+substring$ -- 403
+swap$ -- 28
 text.length$ -- 2
-text.prefix$ -- 92
+text.prefix$ -- 102
 top$ -- 0
-type$ -- 186
+type$ -- 195
 warning$ -- 1
-while$ -- 78
+while$ -- 82
 width$ -- 0
-write$ -- 208
+write$ -- 218
 (There was 1 warning)

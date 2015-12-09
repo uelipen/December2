@@ -49,13 +49,20 @@ $^7$ Perimeter Institute for Theoretical Physics, 31 Caroline St. N., Waterloo, 
 
 \begin{abstract}
 We discuss some of the claims that have been made regarding the statistics of 
-fast radio bursts (FRBs). We show how if their repeat rate were non-Poissonion
-and had some associated flicker noise then the current limits of repetition ($\le$ daily)
-would be weakened. The repeat rate has implications for observing strategy, favouring 
-shallow wide-field surveys in the case where bursts repeat regularly. 
-We also discuss the statistics of the apparent latitudinal dependence of FRBs, which 
-is also affected by repetition. We show that the non-uniformity of bursts on the sky
-cannot be ruled out with N-$\sigma$, as has been claimed. 
+fast radio bursts (FRBs). In \cite{2015arXiv150505535C} we conjectured that flicker noise associated 
+with FRB repetition could show up in non-cataclysmic neutron star emission models,
+like supergiant pulses. We show how if their repeat rate really were non-Poissonion
+and had a pink or red spectrum then the current limits of repetition ($\lesssim$ daily)
+would be weakened. The repeat rate has implications for observing strategy, generally favouring 
+shallow wide-field surveys, including if it is zero. 
+We also discuss the statistics of the apparent latitudinal dependence of FRBs, and offer
+a simple method for calculating the significance of this effect. It is shown how 
+the evidence for a steep latitudinal gradient is less strong than initially suggested 
+and simple explanations like increased scattering and sky temperature 
+in the plane are sufficient to decrease the low-lat burst rate, given current data.
+The reported dearth of bursts near the plane is further complicated if FRBs have 
+non-Poissonian repetition, since in that case the effective event rate itself 
+depends on survey depth.
 
 \end{abstract}
 \begin{keywords}
@@ -78,7 +85,7 @@ has been conclusively shown to repeat. This has lead to the
 interpretation that FRBs are cosmological,
 since the intergalactic medium (IGM) would naturally provide
 DMs between $\sim$300-1600 pc cm$^{-3}$ for sources at 
-$z\sim0.3-1$. 
+$z\sim0.3-1$ \citep{2013Sci...341...53T}. 
 
 Given their apparent phenomenological richness
 (polarization, scattering, etc.) and considering
@@ -99,33 +106,36 @@ assumptions about the statistics of their event rate,
 spatial distribution, and repetition are important for the design
 and observing strategy of upcoming surveys. In section \ref{repeat} we explore the 
 consequences of repeating FRBs in the case where their 
-burst rate is non-Possionian and exhibits a 1/f power spectrum, 
+burst rate is non-Possionian and exhibits a 1/$f$ power spectrum, 
 or pink noise. We also investigate the claims of \cite{2015arXiv150701002M}
 that FRB 140514 could have been the same source as FRB 100220, 
-and comment on its implications. In section \ref{latitude}
+and comment on its implications. In section \ref{rate}
+discuss the impact of FRB repetition on survey strategy. In section \ref{latitude}
 we discuss the statistical treatment of the apparent latitudinal dependence 
-of event rate and the lack of detections at low galactic latitude. In section \ref{rate}
-discuss the impact of FRB repetition on survey strategy. 
+of event rate and the lack of detections at low galactic latitude.
 
 % Usual FRB introduction, swayed towards repetition and statistics.
-
 
 \section{Repeat rates}
 \label{repeat}
 
 Though no source has been shown with certainty to repeat, 
 the limits on the repeatability of FRBs are still weak. Several 
-models generical predict repetition, whether periodic or stochastic. 
+models generically predict repetition, whether periodic or stochastic. 
 Galactic flaring stars \citep{2015arXiv150701002M}, radio bursting 
 magnetars \citep{2007arXiv0710.2006P, 2015ApJ...807..179P}, and pulsar planet systems 
 \citep{2014A&A...569A..86M} all predict repetition with varying 
 rates and burst distributions. In \cite{2015arXiv150505535C} we 
-proposed supergiant pulses from very young pulsars in supernova 
+suggest supergiant pulses from very young pulsars in supernova 
 remnants of nearby galaxies could explain the high DMs, Faraday rotation, 
-scintillation, and polarization properties of the observed FRBs. We also 
-conjecture that if the repetition of supergiant pulses were non-Poissonian 
+scintillation, and polarization properties of the observed FRBs. We  
+proposed that if the repetition of supergiant pulses were non-Poissonian 
 (with a pink or red distribution) 
 then one might expect several bursts in a short period of time.
+It is also worth mentioning that the statistics and repeat rates of FRBs 
+could vary from source to source -- even if 
+they come from a single class of progenitors -- so a long followup on an individual burst 
+may not provide global constraints.
 
 \subsection{Flicker noise}
 
@@ -145,7 +155,7 @@ source, this results in uniformity on short timescales, i.e. a burst of
 clustered events followed by extended periods of quiescence. 
 If FRBs were to exhibit such flicker noise then their repetition would 
 not only be non-periodic, but would also have a time varying 
-burst rate. Therefore the number of events
+pulse rate. Therefore the number of events
 seen in a follow-up observation would depend strongly on 
 the time passed since the initial event.
 
@@ -175,16 +185,18 @@ fields were observed in \cite{2015MNRAS.454..457P}. We then
 asked how many bursts are seen to repeat if we do an immediate
 follow up vs. a followup several years after the initial event 
 at times corresponding to 
-to those in \cite{2015MNRAS.454..457P}. We Monte Carlo this 
+to the actual observations carried out. We Monte Carlo this 
 simple simulation with one sample per hour and a probability of 0.5 
 that a given sample has a burst in it. 
 In the stationary Poisson case, the rate of bursts in 
 the immediate followup is the same as the multi-year followup 
 since all times are 
-uncorrelated. When we use a spectrum of events to be described by 
-a 1/f powerlaw, we see $\sim$20$\%$ more events in the case where we
+uncorrelated. When we use a spectrum of events described by 
+a 1/$f$ powerlaw, we see $\sim$20$\%$ more events in the case where we
 stay on the source after first observing it than when the followup takes 
-place several months or years later.
+place several months or years later, even though the total integration time 
+is equal. With a 1/$f^2$ red spectrum, 
+we see $\sim$45$\%$ more events.
 
 \begin{figure}
   \centering
@@ -213,64 +225,20 @@ that this underestimated the coincidence, since FRB 140514
 was found in the same pointing as 110220 during the gridded followup, 
 and not one of the four other staggered pointings near the field. 
 The probability also dropped due to the updated daily event rate,
-given the \cite{2013Sci...341...53T} estimate is now thought to likely be high.
-Using the rate calculated in \cite{2015arXiv150500834R}, and following
+given the \cite{2013Sci...341...53T} estimate is now likely thought to be high.
+In general we expect the true rate of FRBs to be lower than what is 
+reported due to non-publication bias: If archival data is searched and 
+nothing is found, it is likely to go unpublished. 
+That said, using the rate calculated in \cite{2015arXiv150500834R} and following
 the procedure of \cite{2015arXiv150701002M}, we find the likelihood of 
 $\sim$ 0.25-2.5$\%$. Given the relatively low probability of finding 
 a new FRB in the same field and since there are models that predict
 burst repetition with variable DMs \citep{2015arXiv150505535C, 2015arXiv150701002M}
 one can then ask the question: If one FRB out of eight is found to
 repeat during 85 hours of followup, what are the limits on the expected
-repeat rate? 
-
-
-\section{Latitudinal dependence}
-\label{latitude}
-There is now evidence that the FRB rate is nonuniform on the sky, 
-with fewer detectible events at low galactic latitudes \citep{2014ira..book.....B}.
-However the statistical significance of this finding may be 
-overstated and some of the initial claims premature. In \cite{2014ApJ...789L..26P}
-the authors compute the probability of the disparity between the number of 
-bursts seen in the the high and low latitude components of the High Time Resolution Universe survey 
-(HTRU). They calculate the probability of seeing N=0 in the low-lat survey and M=4 in 
-the high-lat, despite having searched 88$\%$ more data in the latter. We would point out 
-that in general P(N$|$M) describes a very specific outcome, and P($\le$N$|\ge$M) would be 
-more appropriate since it includes all outcomes equally or more unlikely.
-That number might also be multiplied by two, since if the survey found 
-four low-latitude FRBs and zero high-lat ones, we would ask the same question. HTRU 
-has since reported five more bursts in the high galactic region, but using a dataset 
-that spent $\sim$2.5 times more time at high-lat. Below we try and quantify the likelihood of 
-this.
-
-If one wants to 
-test a statistical hypothesis, then that claim should be treated as true and one should
-ask with what confidence it can be rejected. 
-In the case of testing the abundance of FRBs at high latitudes,
-the sky should be bifurcated into high and low regions a priori 
-(e.g. the predefined high-lat HTRU and its compliment). The rate in both regions 
-is then taken to be the same, and the likelihood of a given spatial distribution of observed
-sources can be calculated.
-This situation is naturally
-described by a biased binomial distribution with a fixed number of events. Suppose
-K FRBs are observed in a given survey. We then ask the question, what is the probability of 
-seeing M events in the high region and (K-M) events in the lower region? 
-This probability can be calculated % Should I include >M in one region?
-as 
-
-\begin{equation}
-\label{eq-binomial}
-\textup{P(M} | \,\textup{K}, p) = \left ( \frac{\textup{K}}{\textup{M}} \right ) p^{\textup{M}} (1-p)^{\textup{K}-\textup{M}} 
-\end{equation}
-
-\noindent where $p$ is the probability that an event happens to show up in the 
-northern region. In a survey where more time is spent on one part of the 
-sky than the other, $p=\alpha \, /(1 + \alpha)$, where $\alpha$ is the ratio of 
-time spent in the high-lat region vs. the low region. In the case of the HTRU 
-survey, K=9 and since none were found 
-in the low-lat region, M=9. Roughly 2500 hours were spent searching the upper region
-and $\sim1000$ hours were spent at $|b| < 15\degree$, giving $\alpha=2.5$. Using equation 
-\ref{eq-binomial}, this outcome is only 13$\%$ unlikely. 
-
+repeat period? In the Poisson case this is simply P$_{rep}=85\pm9 \, hr$. In 
+the 1/$f^\gamma$ case this is blank and blank for $\gamma$ of +1 and +2, 
+respectively.
 
 
 
@@ -289,19 +257,137 @@ $3.3^{+5.0}_{-2.5}\times10^3$ sky$^{-1}$ estimated by
 only $\sim$160-1600 sources. In this scenario 
 there is no FRB in almost every pixel on the sky, which means
 one could integrate on most patches forever without 
-seeing an event. Therefore deep surveys are at a disadvantage 
+seeing an event. An example of this strategy is the VLA millisecond search, 
+in which $\sim40\%$ of the time was spent at a single pointing, and
+almost three quarters of the time was spent at just three locations \citep{2015ApJ...807...16L}.
+It is possible that pointing-to-pointing event rate variance contributed 
+to their not seeing anything.
+
+We therefore warn that deep surveys are at a disadvantage 
 to those that sweep large regions of the sky 
 (CHIME  \citep{2014SPIE.9145E..22B}, 
 UTMOST\footnote{http://www.caastro.org/news/2014-utmost}, HIRAX)
 because the non-repeating 
-scenario is unaffected; shallow observations 
+scenario is unaffected; whereas shallow observations 
 should not hurt the detection rate, no matter what their repetition. 
 Ideally, a survey
 needs only to spend a few dispersion delay times on each beam 
 before moving on. 
 
+\section{Latitudinal dependence}
+\label{latitude}
+There is now evidence that the FRB rate is nonuniform on the sky, 
+with fewer detectible events at low galactic latitudes \citep{2014ira..book.....B}.
+However the statistical significance of this finding may be 
+overstated and some of the initial claims premature. In \cite{2014ApJ...789L..26P}
+the authors compute the probability of the disparity between the number of 
+bursts seen in the the high and intermediate latitude ($|b| < 15\degree$) components of the High Time Resolution Universe survey 
+(HTRU). They calculate the probability of seeing N=0 in the low-lat survey and M=4 in 
+the high-lat, despite having searched 88$\%$ more data in the latter, and they 
+rule out the uniform sky hypothesis with 99.5$\%$ certainty. We would point out 
+that in general P(N$|$M) describes a very specific outcome, and P($\le$N$|\ge$M) would be 
+more appropriate since it includes all outcomes equally or more unlikely.
+That number might also be multiplied by two, since if the survey found 
+four low-latitude FRBs and zero high-lat ones, we would ask the same question. HTRU 
+has since reported five more bursts in the high galactic region, but using a dataset 
+that spent $\sim$2.5 times more time at high-lat. Below we try and quantify the likelihood of 
+this.
+
+
+If one wants to 
+test a statistical hypothesis, then that claim should be treated as true and one should
+ask with what confidence it can be rejected. 
+In the case of testing the abundance of FRBs at high latitudes,
+the sky should be partitioned into high and low regions a priori 
+(e.g. the predefined high-lat HTRU and its compliment). The rate in both regions 
+is then taken to be the same, and the likelihood of a given spatial distribution of observed
+sources can be calculated. This situation is naturally
+described by a biased binomial distribution with a fixed number of events. Suppose
+a total of K FRBs are observed in a given survey. We can ask the question, what is the probability of 
+seeing M events in the high region and (K-M) events in the lower region? 
+This probability can be calculated % Should I include >M in one region?
+as 
+
+\begin{equation}
+\label{eq-binomial}
+\textup{P(M} | \,\textup{K}, p) =  \binom{\textup{K}}{\textup{M}} \, p^{\textup{M}} (1-p)^{\textup{K}-\textup{M}} 
+\end{equation}
+
+\noindent where $p$ is the probability that an event happens to show up in the 
+northern region. In a survey where more time is spent on one part of the 
+sky than the other, $p=(1 + \alpha)/\, \alpha$, where $\alpha$ is the ratio of 
+time spent in the high-lat region vs. the intermediate region. In the case of the HTRU 
+survey, K=9 and since none were found 
+in the low-lat region, M=9. Roughly 2500 hours were spent searching the upper region
+and $\sim1000$ hours were spent at $|b| < 15\degree$, giving $\alpha=0.4$. Using equation 
+\ref{eq-binomial}, this outcome is only $\sim5\%$ unlikely. 
+
+The problem is given a Bayesian treatment in 
+\cite{2014ApJ...789L..26P} which gives the following.
+
+\begin{equation}
+\label{eq-petroff}
+\textup{P(N} | \,\textup{M}) =  \alpha^{\textup{N}} (1 + \alpha)^{-(1 + \textup{M + N})} \frac{(\textup{M+N})!}{\textup{M!N!}}
+\end{equation}
+
+\noindent This gives a probability of $\sim$3.5$\%$. However as mentioned 
+above, If sticking with the Bayesian 
+approach we should probably calculate
+
+\begin{equation} 
+\label{eq-petroff2}
+\textup{P}(\le \textup{N}_{obs} | \ge \textup{M}_{obs}) = \sum_{0}^{N_{obs}} \sum_{M_{obs}}^\infty \textup{P(N} | \,\textup{M})
+\end{equation} 
+
+\noindent since we are concerned with the total likelihood of anything as or more 
+extreme than the observed event. In the case where we do not see any in the low-lat 
+region and N$_{obs}=0$, 
+
+\begin{equation}
+\textup{P}(\le \textup{N}_{obs} | \ge \textup{M}_{obs})=\frac{(1+\alpha)}{\alpha}^{-\textup{M}_{obs}}
+\end{equation}
+
+\noindent since equation \ref{eq-petroff2} becomes a geometric series sum. 
+This gives a probability of $\sim$12$\%$, significantly larger than the non-integrated
+calculation. 
+
+Though clearly this is not the final word on the the latitudinal distribution of FRBs, 
+we find the biased binomial approach to be the 
+most transparent and intuitive treatment, while we are in the regime of small number statistics. 
+Like \cite{2015arXiv150500834R} we argue
+that the jury is still out on the severity of the latitudinal 
+dependence. With current data the preference for FRBs to 
+be discovered outside of the plane seems consistent with
+sky-temperature effects and increased scattering. 
+Whether or not more sophisticated explanations 
+(e.g \cite{2015MNRAS.451.3278M}) are required remains to be seen. 
 
 \section{Conclusions}
+
+The search for FRBs with multiple surveys that have disparate sensitivities, 
+frequency coverage, and survey strategy has made it difficult even to 
+estimate a daily sky rate (not to mention publication bias). 
+That combined with the relatively low number of total FRBs observed 
+has meant that dealing with their statistics can be non-trivial. In 
+the case of repetition, we remind the reader that several non-cataclysmic 
+models for FRBs are expected to repeat. In the case of supergiant 
+pulses from pulsars, SGR radio flares, or even Galactic flare stars, it is possible 
+that this repetition would by non-stationary and might exhibit strong correlations 
+in time. We have shown that if the repetition had some associated flicker noise 
+and its powerspectrum were 1/$f^\gamma$, then one should expect the repetition 
+rate to be higher immediately after the initial FRB detection. Therefore followup 
+observations to archival discoveries that take place years or 
+months after the first event would not provide strong upper limits. 
+This also means that if no burst is found in a given beam after some 
+integration time, then it is unlikely that one will occur in the following integration, and therefore 
+a new pointing should be searched. In other words, shallow fast surveys are favourable. 
+
+In section \ref{latitude} we offered a simple way of quantifying the 
+latitudinal dependence of FRBs with a binomial distribution. This 
+is akin to a biased coin flip, in which we ask ``what is the probability of 
+M bursts being found in one region and N bursts in its compliment, given 
+$\alpha$ times more time was spent in the latter". 
+
 
 
 
