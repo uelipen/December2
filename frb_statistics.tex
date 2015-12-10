@@ -97,9 +97,10 @@ at present the conventional wisdom is that they are likely cosmological
 in origin \citep{2013Sci...341...53T}, they seem to not repeat regularly
 \citep{2015MNRAS.454..457P}, and there is a dearth of bursts 
 at low galactic latitudes \citep{2014ApJ...789L..26P, 2014ApJ...792...19B, 2015MNRAS.451.3278M}.
-There have been 
-a number of models proposed to describe this cataclysmic, cosmological 
-scenario \citep{2012ApJ...760...64M, 2013PASJ...65L..12T, 2014A&A...562A.137F, 2015ApJ...814L..20M}.
+
+Based on this premise there have been 
+a number of models proposed to describe cataclysmic, cosmological 
+FRBs \citep{2012ApJ...760...64M, 2013PASJ...65L..12T, 2014A&A...562A.137F, 2015ApJ...814L..20M}.
 However since the field is still in its infancy it is important to
 leave as many conceptual doors open as possible;
 assumptions about the statistics of their event rate, 
@@ -196,7 +197,15 @@ a 1/$f$ powerlaw, we see $\sim$20$\%$ more events in the case where we
 stay on the source after first observing it than when the followup takes 
 place several months or years later, even though the total integration time 
 is equal. With a 1/$f^2$ red spectrum, 
-we see $\sim$45$\%$ more events.
+we see $\sim$45$\%$ more events. More importantly, with flicker noise 
+the variance is strongly time dependent. If we imagine an object that 
+repeated on average once per hour, then if those pulses were Poisson-distributed 
+the probability of seeing zero bursts in 10 hours or longer is $\sim$0.01. With 
+pink noise one expects this roughly 20$\%$ of the time, since the system 
+prefers either to be in ``on" or ``off" mode. If the average repeat period were more 
+like 5-20 hours, then we would almost certainly expect to see nothing in a multi-day followup 
+observation that took place weeks or years after the initial event.
+
 
 \begin{figure}
   \centering
@@ -221,20 +230,20 @@ was originally reported that the probability of seeing a
 new FRB in the field of 110220 during the 85 hours of followup 
 was $\sim$0.32  
 \citep{2015MNRAS.447..246P}. It was then pointed out by \cite{2015arXiv150701002M} 
-that this underestimated the coincidence, since FRB 140514
-was found in the same pointing as 110220 during the gridded followup, 
-and not one of the four other staggered pointings near the field. 
+that this underestimated the coincidence by an order of magnitude, 
+since they estimated the rate in any one of the 13 beams, 
+while the new event occurred in the identical beam.
 The probability also dropped due to the updated daily event rate,
 given the \cite{2013Sci...341...53T} estimate is now likely thought to be high.
 In general we expect the true rate of FRBs to be lower than what is 
 reported due to non-publication bias: If archival data is searched and 
-nothing is found, it is likely to go unpublished. 
+nothing is found, it is less likely to be published than if something is found. 
 That said, using the rate calculated in \cite{2015arXiv150500834R} and following
 the procedure of \cite{2015arXiv150701002M}, we find the likelihood of 
 $\sim$ 0.25-2.5$\%$. Given the relatively low probability of finding 
 a new FRB in the same field and since there are models that predict
 burst repetition with variable DMs \citep{2015arXiv150505535C, 2015arXiv150701002M}
-one can then ask the question: If one FRB out of eight is found to
+one can ask the question: If one FRB out of eight is found to
 repeat during 85 hours of followup, what are the limits on the expected
 repeat period? In the Poisson case this is simply P$_{rep}=85\pm9 \, hr$. In 
 the 1/$f^\gamma$ case this is blank and blank for $\gamma$ of +1 and +2, 
@@ -387,7 +396,6 @@ latitudinal dependence of FRBs with a binomial distribution. This
 is akin to a biased coin flip, in which we ask ``what is the probability of 
 M bursts being found in one region and N bursts in its compliment, given 
 $\alpha$ times more time was spent in the latter". 
-
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  8 DEC 2015 23:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  10 DEC 2015 17:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -291,14 +291,14 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 47.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 139.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 140.
 
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 139.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
  [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -306,17 +306,14 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 <frb_sim_pink.png, id=24, 867.24pt x 433.62pt>
 File: frb_sim_pink.png Graphic file (type png)
  <use frb_sim_pink.png>
-Package pdftex.def Info: frb_sim_pink.png used on input line 203.
+Package pdftex.def Info: frb_sim_pink.png used on input line 212.
 (pdftex.def)             Requested size: 251.99382pt x 136.08154pt.
 
-Overfull \hbox (11.99382pt too wide) in paragraph at lines 203--212
+Overfull \hbox (11.99382pt too wide) in paragraph at lines 212--221
  [][] 
  []
 
-
-Underfull \vbox (badness 1077) has occurred while \output is active []
-
- [2 <./frb_sim_pink.png>] [3] (./frb_statistics.bbl
+[2 <./frb_sim_pink.png>] [3] (./frb_statistics.bbl
 Underfull \hbox (badness 1087) in paragraph at lines 98--100
 []\OT1/cmr/m/n/9 Rane A., Lorimer D. R., Bates S. D., Mc-Mann N.,
  []
@@ -325,7 +322,7 @@ Underfull \hbox (badness 1087) in paragraph at lines 98--100
 Here is how much of TeX's memory you used:
  3302 strings out of 493315
  43192 string characters out of 6137904
- 116495 words of memory out of 5000000
+ 115495 words of memory out of 5000000
  6676 multiletter control sequences out of 15000+600000
  19197 words of font info for 70 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -352,7 +349,7 @@ b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
 sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr
 /local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on frb_statistics.pdf (4 pages, 285341 bytes).
+Output written on frb_statistics.pdf (4 pages, 285739 bytes).
 PDF statistics:
  108 PDF objects out of 1000 (max. 8388607)
  77 compressed objects within 1 object stream
