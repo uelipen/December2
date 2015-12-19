@@ -210,7 +210,8 @@ to the actual observations carried out.
 
 We Monte Carlo this 
 simple simulation with one sample per hour and a probability of 0.5 
-that a given sample has a burst in it. 
+that a given sample has a burst in it. The repeat rate of once per hour
+is chosen arbitrarily and should not affect the comparison. 
 In the stationary Poisson case, the rate of bursts in 
 the immediate follow-up is the same as the multi-year follow-up 
 since all times are 
@@ -227,7 +228,7 @@ observation that took place weeks or years after the initial event.
 \begin{figure}
   \centering
    \includegraphics[trim={.5in, 0in, .5in, 0in}, width=0.5\textwidth, height=0.27\textwidth]{frb_sim_pink24.png}
-   \caption{\textit{Left panel}: Power spectrum for pulse arrival times of a single FRB.
+   \caption{Realization of our mock follow-up Monte Carlo. \textit{Left panel}: Power spectrum for pulse arrival times of a single FRB.
    Grey shows a flat spectrum, corresponding to the often assumed Poissonian 
    repetition rate. The red and blue spectra show flicker noise, with pink (1/$f$) 
    noise and Brownian (1/$f^2$) noise respectively. \textit{Right panel}: 
@@ -274,10 +275,13 @@ cats is effectively zero. With a pink distribution it is closer to $1\%$.
 
 \begin{figure}
   \centering
-   \includegraphics[trim={.5in, 0in, .5in, 0in}, width=0.4\textwidth, height=0.23\textwidth]{110_hours_followup.png}
-   \caption{Histogram of a 110 hours mock follow-up observation assuming an average repeat rate of 
-   once per hour using two different models 
-   for the repetition statistics. A 1$/f$ distribution (blue) gives $\sim1\%$ probability of seeing one or zero events, 
+   \includegraphics[trim={0in, 0in, 0in, 0in}, width=0.4\textwidth, height=0.23\textwidth]{110_hours_followup.png}
+   \caption{Histogram of a 110-hours mock follow-up observation assuming an average repeat rate of 
+   once per hour, using two different models 
+   for the repetition statistics. The $y$-axis gives the probability density for seeing 
+   N repetitions during the 110-hours observation.
+   A 1$/f$ distribution (red) gives $\sim1\%$ probability of seeing one or zero events 
+   (the two options, depending on the treatment of FRB 140514), 
    which is nearly impossible in the Poisson case (grey).}
    \label{FIG-hist}
 \end{figure}

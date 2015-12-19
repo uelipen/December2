@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  19 DEC 2015 11:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  19 DEC 2015 11:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -308,20 +308,23 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 <frb_sim_pink24.png, id=24, 867.24pt x 433.62pt>
 File: frb_sim_pink24.png Graphic file (type png)
  <use frb_sim_pink24.png>
-Package pdftex.def Info: frb_sim_pink24.png used on input line 229.
+Package pdftex.def Info: frb_sim_pink24.png used on input line 230.
 (pdftex.def)             Requested size: 251.99382pt x 136.08154pt.
 
-Overfull \hbox (11.99382pt too wide) in paragraph at lines 229--238
+Overfull \hbox (11.99382pt too wide) in paragraph at lines 230--239
  [][] 
  []
 
-[2 <./frb_sim_pink24.png>]
-<110_hours_followup.png, id=32, 578.16pt x 289.08pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./frb_sim_pink24.png>] <110_hours_followup.png, id=32, 578.16pt x 289.08pt
+>
 File: 110_hours_followup.png Graphic file (type png)
 
 <use 110_hours_followup.png>
-Package pdftex.def Info: 110_hours_followup.png used on input line 277.
-(pdftex.def)             Requested size: 201.59595pt x 115.91666pt.
+Package pdftex.def Info: 110_hours_followup.png used on input line 278.
+(pdftex.def)             Requested size: 201.5915pt x 115.91666pt.
  [3 <./110_hours_followup.png>]
 (./frb_statistics.bbl [4]
 Underfull \hbox (badness 1087) in paragraph at lines 98--100
@@ -338,7 +341,7 @@ Here is how much of TeX's memory you used:
  6682 multiletter control sequences out of 15000+600000
  19542 words of font info for 71 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,14n,34p,855b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,14n,34p,902b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
@@ -362,7 +365,7 @@ local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/l
 ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/loc
 al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local
 /texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on frb_statistics.pdf (5 pages, 326583 bytes).
+Output written on frb_statistics.pdf (5 pages, 329221 bytes).
 PDF statistics:
  117 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
