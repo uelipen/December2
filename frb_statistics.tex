@@ -219,8 +219,8 @@ the immediate follow-up is the same as the multi-year follow-up
 since all times are 
 uncorrelated. However with flicker noise 
 the variance is strongly time dependent. If we imagine an object that 
-repeated on average once per hour, then if those pulses were Poisson-distributed 
-the probability of seeing zero bursts in 10 hours or longer is $\sim$0.01. With 
+repeated on average once per two hours, then if those pulses were Poisson-distributed 
+the probability of seeing zero bursts in 10 hours or longer is $\sim$0.02. With 
 pink noise one expects this roughly 20$\%$ of the time, since the system 
 prefers either to be in ``on" or ``off" mode. If the average repeat period were more 
 like 5-20 hours, then we would often see nothing in a multi-day follow-up 
@@ -286,12 +286,15 @@ shown in Figure \ref{FIG-hist}.
   \centering
    \includegraphics[trim={0in, 0in, 0in, 0in}, width=0.4\textwidth, height=0.23\textwidth]{110_hours_followup.png}
    \caption{Histogram of a 110-hours mock follow-up observation assuming an average repeat rate of 
-   once per hour, using two different models 
+   once per two hours, using two different models 
    for the repetition statistics. The $y$-axis gives the probability of seeing 
    N repetitions during the 110-hours observation.
    A 1$/f$ distribution (red) gives $\sim7\%$ probability of seeing one or zero events 
    (the two options, depending on the treatment of FRB 140514), 
-   which is nearly impossible in the Poisson case (grey).}
+   which is nearly impossible in the Poisson case (grey).  The peak at
+ 110 events is an artefact of the small scale cutoff in our $1/f$
+ process, resulting in a parity symmetry that no events are equally likely to
+ all events.}
    \label{FIG-hist}
 \end{figure}
 
@@ -344,10 +347,15 @@ rule out the uniform sky hypothesis with 99.5$\%$ certainty. We would point out
 that in general P(N$|$M) describes a very specific outcome, and it would be 
 more appropriate to include all outcomes equally or more unlikely.
 That number might also be multiplied by two, since if the survey found 
-four intermediate-latitude FRBs and zero high-lat ones, we would ask the same question. 
+four intermediate-latitude FRBs and zero high-lat ones, we would ask the same 
+question. 
 But a simpler approach to this problem would be analogous to a series of 
 coin flips. If a coin were flipped four times, the probability of seeing all heads is 1/16, 
-or 6.25$\%$. In the FRB case the Universe is flipping a coin each time a new burst 
+or 6.25$\%$. This is a factor of six higher than  the analogous analysis of 
+\citet{2014ApJ...789L..26P}.  We can test the null hypothesis that the coin is fair, and using
+the binomial statistic would conclude that the outcome is consistent with a 
+fair coin at 95\% confidence, differing from the Bayesian conclusion of \citet{2014ApJ...789L..26P}.
+In the FRB case the Universe is flipping a coin each time a new burst 
 appears, with some bias factor due to things like different integration times.
 HTRU 
 has since reported five more bursts in the high Galactic region, but using a dataset 
