@@ -56,7 +56,7 @@ like supergiant pulses. We show how the current limits of repetition
 would be significantly weakened if their repeat rate really were non-Poissonian
 and had a pink or red spectrum.
 Repetition and its statistics have implications for observing strategy, generally favouring 
-shallow wide-field surveys, including if the repeat rate is zero. 
+shallow wide-field surveys, since a repeat rate of zero does not depend on survey depth. 
 We also discuss the statistics of the apparent latitudinal dependence of FRBs, and offer
 a simple method for calculating the significance of this effect. It is shown how 
 the evidence for a steep latitudinal gradient of the FRB rate is less strong than initially suggested 
@@ -64,8 +64,8 @@ and simple explanations like increased scattering and sky temperature
 in the plane are sufficient to decrease the low-latitude burst rate, given current data.
 The reported dearth of bursts near the plane is further complicated if FRBs have 
 non-Poissonian repetition, since in that case the event rate inferred from observation
-depends on survey depth. We provide a new general Bayesian framework for addressing 
-this problem in the limit where large numbers of FRBs have been detected.
+depends on survey depth. We provide a generalized Bayesian framework for addressing 
+this problem, which allows for direct model comparison. 
 
 \end{abstract}
 \begin{keywords}
@@ -83,11 +83,11 @@ The most striking features of FRBs are their large dispersion
 measures (DMs) -- too high to be attributed to our own Galaxy's
 interstellar medium (ISM) --
 and their event rate (10$^3$-$10^4$ sky$^{-1}$ day$^{-1}$). They
-last for about a millisecond with peak flux of $\sim$Jy, and none
-has been conclusively shown to repeat. This has lead to the 
+last for about a millisecond with peak flux of roughly a Jy, and none
+has been conclusively shown to repeat. This has led to the 
 interpretation that FRBs are cosmological,
 since the intergalactic medium (IGM) would naturally provide
-DMs between $\sim$300-1600 pc cm$^{-3}$ for sources at 
+DMs between 300-1600 pc cm$^{-3}$ for sources at 
 $z\sim0.3$-$1$ \citep{2013Sci...341...53T}. 
 
 Given their apparent phenomenological richness
@@ -95,7 +95,7 @@ Given their apparent phenomenological richness
 how little we know about their location and physical 
 origin, it is likely that FRBs will be of interest to the community for 
 years to come, assuming they are not terrestrial.
-Though we are in the regime of roughly a dozen published FRBs, 
+Though we are in the regime of only a dozen published FRBs, 
 at present the conventional wisdom is that they are likely cosmological
 in origin \citep{2013Sci...341...53T}, they seem to not repeat regularly
 \citep{2015MNRAS.454..457P}, and there is a dearth of bursts 
@@ -116,7 +116,7 @@ that FRB 140514 could have been the same source as FRB 100220,
 and comment on its implications. In Section \ref{rate} we
 discuss the impact of FRB repetition on survey strategy. In Section \ref{latitude}
 we discuss the statistical treatment of the apparent latitudinal dependence 
-of event rate and the lack of detections at low Galactic latitude.
+of the event rate and the lack of detections at low Galactic latitude.
 
 % Usual FRB introduction, swayed towards repetition and statistics.
 
@@ -131,7 +131,7 @@ magnetars \citep{2007arXiv0710.2006P, 2015ApJ...807..179P}, and pulsar planet sy
 \citep{2014A&A...569A..86M} all predict repetition with varying 
 rates and burst distributions. 
 
-In \citep{2015arXiv150505535C} it was 
+In \cite{2015arXiv150505535C} it was 
 suggested that supergiant pulses from very young pulsars in supernova 
 remnants of nearby galaxies could explain the high DMs, Faraday rotation, 
 scintillation, and polarization properties of the observed FRBs. We  
@@ -143,11 +143,11 @@ could vary from source to source -- even if
 they come from a single class of progenitors -- so a long follow-up on an individual burst 
 may not provide global constraints.
 In this 
-letter we will refer to stationary Poisson processes ($\mu(t)$ is constant)
+letter we will refer to stationary Poisson processes (expectation value, $\mu(t)$, is constant in time)
 as ``Poissonian". When we discuss non-Poissonian statistics we will be
 focusing on stochastic processes that are correlated on varying timescales. For
 example we will not discuss periodic signals, which are not Poissonian but 
-we feel they have already been studied \citep{2015MNRAS.454..457P}.
+have already been studied \citep{2015MNRAS.454..457P}.
 
 
 \subsection{Flicker noise}
@@ -165,12 +165,12 @@ are empirically known to be inversely proportional to frequency
 for a variety of dynamical systems. This can be written as 
 
 \begin{equation}
-S(f) = \frac{C}{f^\gamma} \,\,\,\,\,\ \textup{if} \,\,\,\,\, f_{min} \le f \le f_{max}
+S(f) = \frac{C}{f^\gamma} \,\,\,\,\,\ \textup{if} \,\,\,\,\, f_{\rm{min}} \le f \le f_{\rm{max}}
 \end{equation}
 
-\noindent where $S(f)$ is the spectral density (i.e. powerspectrum), $\gamma$ is 
+\noindent where $S(f)$ is the spectral density (i.e. power spectrum), $\gamma$ is 
 between 0.5-2,
-and $f_{min}$ and $f_{max}$ are cutoffs beyond which the powerlaw 
+and $f_{min}$ and $f_{max}$ are cutoffs beyond which the power law 
 does not hold.
 
 In the case of a time-domain astronomical 
@@ -182,17 +182,17 @@ pulse rate and, more importantly, variance. Therefore the number of events
 seen in a follow-up observation would depend strongly on 
 the time passed since the initial event.
 
-In \citep{2015MNRAS.454..457P}
+In \cite{2015MNRAS.454..457P}
 the fields of eight FRBs discovered between 2009 and 2013
 were followed up from April to October of 2014, for an average 
-of $\sim$11.4 hours per field. During this follow-up programme 
+of 11.4 hours per field. During this follow-up programme 
 FRB 140514 was found in the same beam as FRB 110220, however
 the authors argue that it is likely a new source due to its lower DM. 
 After its discovery, the field of 140514 was monitored 
 five more times, starting 41 days later on 2014-06-24, without seeing anything.
 Under the assumption that 140514 was a new FRB 
 that only showed up in the same field 
-coincidentally and that the repeat rate is uncorrelated,
+coincidentally and that the repeat rate is constant,
  \cite{2015MNRAS.454..457P} rule out repetition with a period, $P \le$ 8.6 
 hours and reject 8.6 $<$ $P$ $<$ 21 hours with 90$\%$ confidence.
 However it is possible that one or both of those premises 
@@ -204,10 +204,10 @@ non-Poissonian and initial bursts from FRBs were to have aftershocks
 similar to earthquakes, then the non-immediate follow-up observations 
 impose far weaker repeat rate limits than has been suggested. We 
 constructed a mock follow-up observation of the eight FRBs whose
-fields were observed in \citep{2015MNRAS.454..457P}. We then 
+fields were observed in \cite{2015MNRAS.454..457P}. We then 
 asked how many bursts are seen to repeat if we do an immediate
-follow up vs. a follow-up several years after the initial event 
-at times corresponding to 
+follow-up vs. a follow-up several years after the initial event 
+at times corresponding 
 to the actual observations carried out. 
 
 We run a simple Monte Carlo 
@@ -217,10 +217,10 @@ is chosen arbitrarily and should not affect the comparison.
 In the stationary Poisson case, the rate of bursts in 
 the immediate follow-up is the same as the multi-year follow-up 
 since all times are 
-uncorrelated. However with flicker noise 
-the variance is strongly time dependent. If we imagine an object that 
+statistically equivalent. However with flicker noise 
+the variance is strongly time-dependent. If we imagine an object that 
 repeated on average once per two hours, then if those pulses were Poisson-distributed 
-the probability of seeing zero bursts in 10 hours or longer is $\sim$0.02. With 
+the probability of seeing zero bursts in 10 hours or longer is $\sim0.02$. With 
 pink noise one expects this roughly 20$\%$ of the time, since the system 
 prefers either to be in ``on" or ``off" mode. If the average repeat period were more 
 like 5-20 hours, then we would often see nothing in a multi-day follow-up 
@@ -236,13 +236,13 @@ immediately after the initial event, rather than months or years after.
 
 \begin{figure}
   \centering
-   \includegraphics[trim={.5in, 0in, .5in, 0in}, width=0.5\textwidth, height=0.27\textwidth]{frb_sim_pink24.png}
+   \includegraphics[trim={1in, 0in, 1in, 0in}, width=0.45\textwidth, height=0.29\textwidth]{frb_sim_pink24.png}
    \caption{Realization of our mock follow-up Monte Carlo. \textit{Left panel}: Power spectrum for pulse arrival times of a single FRB.
    Grey shows a flat spectrum, corresponding to the often assumed Poissonian 
    repetition rate. The red and blue spectra show flicker noise, with pink (1/$f$) 
    noise and Brownian (1/$f^2$) noise respectively. \textit{Right panel}: 
    We found the first ``event" in our Monte Carlo (represented by a star) for the three different spectra 
-   and plotted their behaviour in the subsequent 48 hours of followup. Though the average
+   and plotted their behaviour in the subsequent 48 hours of follow-up. Though the average
    probability over the whole simulation is 0.5 for each distribution, when we zoom in 
    on this short period the strong time-like correlations 
    in the $1/f^\gamma$ cases means there are many repetitions: they are in an ``on" state at this time.}
@@ -251,11 +251,11 @@ immediately after the initial event, rather than months or years after.
 
 
 \subsection{FRBs 110220 and 140514}
-Using the event rate of $\sim10^4$ sky$^{-1}$ day$^{-1}$
+Using the event rate of roughly $10^4$ sky$^{-1}$ day$^{-1}$
 from \cite{2013Sci...341...53T}, it 
 was originally reported that the probability of seeing a 
 new FRB in the field of 110220 during the 85 hours of follow-up 
-was $\sim$0.32  
+was $0.32$  
 \citep{2015MNRAS.447..246P}. It was then pointed out by \cite{2015arXiv150701002M} 
 that this underestimated the coincidence by an order of magnitude, 
 since they estimated the rate in any one of the 13 beams, 
@@ -266,29 +266,29 @@ In general we expect the true rate of FRBs to be lower than what is
 reported due to non-publication bias: If archival data are searched and 
 nothing is found, it is less likely to be published than if something is found. 
 That said, using the rate calculated by \cite{2015arXiv150500834R} and following
-the procedure of \cite{2015arXiv150701002M}, we find the likelihood of 
-$\sim$ 0.25-2.5$\%$.
+the procedure of \cite{2015arXiv150701002M}, we find the likelihood of this to be 
+between 0.25-2.5$\%$.
 
 Given the relatively low probability of finding 
 a new FRB in the same field and since there are models that predict
 burst repetition with variable DMs \citep{2015arXiv150505535C, 2015arXiv150701002M}
 one can ask the question: If one FRB out of eight is found to
 repeat during 110 hours of follow-up (including extra time spent on 140514), 
-what are the limits on the expected
+what are the limits on the
 repeat period? Another way of asking this question is what is the probability of 
-a some number of repetitions during the 110 hours, given a repeat rate. The answer to 
-this question depends strongly on the powerspectrum's shape. For the sake of example, if the average 
+ some number of repetitions during the 110 hours, given a repeat rate. The answer to 
+this question depends strongly on the power spectrum's shape. For the sake of example, if the average 
 repeat rate is once per two hours, then the probability of one repeat or fewer in the Poisson
-cats is effectively zero. With a pink distribution it is closer to $34\%$. This is 
+case is effectively zero. With a pink distribution it is closer to $34\%$. This is 
 shown in Figure \ref{FIG-hist}. 
 
 \begin{figure}
   \centering
-   \includegraphics[trim={0in, 0in, 0in, 0in}, width=0.4\textwidth, height=0.23\textwidth]{110_hours_followup.png}
+   \includegraphics[trim={0in, 0in, 0in, 0in}, width=0.43\textwidth, height=0.22\textwidth]{110_hours_followup.png}
    \caption{Histogram of a 110-hours mock follow-up observation assuming an average repeat rate of 
    once per two hours, using two different models 
    for the repetition statistics. The $y$-axis gives the probability of seeing 
-   N repetitions during the 110-hours observation.
+   $N$ repetitions during the 110-hours observation.
    A 1$/f$ distribution (red) gives $\sim34\%$ probability of seeing one or zero events 
    (the two options, depending on the treatment of FRB 140514), 
    which is nearly impossible in the Poisson case (grey).}
@@ -331,21 +331,22 @@ before moving on.
 \section{Latitudinal dependence}
 \label{latitude}
 There is now evidence that the FRB rate is nonuniform on the sky, 
-with fewer detectible events at low Galactic latitudes \citep{2014ira..book.....B}.
+with fewer detectable events at low Galactic latitudes \citep{2014ira..book.....B}.
 However the statistical significance of this finding may be 
 overestimated. In \citep{2014ApJ...789L..26P}
 the authors compute the probability of the disparity between the number of 
-bursts seen in the the high and intermediate latitude ($|b| < 15\degree$)
+bursts seen in the high- and intermediate-latitude ($|b| < 15\degree$)
 components of the High Time Resolution Universe survey 
 (HTRU). They calculate the probability of seeing $N=0$ in the intermediate 
 latitude survey and $M=4$ in 
-the high-latitude, despite having searched 88$\%$ more data in the latter, and they 
+the high-latitude, despite having searched 88$\%$ more data in the former, and they 
 rule out the uniform sky hypothesis with 99.5$\%$ certainty. We would point out 
 that in general P(N$|$M) describes a very specific outcome, and it would be 
 more appropriate to include all outcomes equally or more unlikely.
 That number might also be multiplied by two, since if the survey found 
 four intermediate-latitude FRBs and zero high-lat ones, we would ask the same 
 question. 
+
 But a simpler approach to this problem would be analogous to a series of 
 coin flips. If a coin were flipped four times, the probability of seeing all heads is 1/16, 
 or 6.25$\%$. This is a factor of six higher than  the analogous analysis of 
@@ -356,7 +357,7 @@ In the FRB case the Universe is flipping a coin each time a new burst
 appears, with some bias factor due to things like different integration times.
 HTRU 
 has since reported five more bursts in the high Galactic region, but using a dataset 
-that spent $\sim$2.5 times more time at high-lat. Below we try and quantify the likelihood of 
+that spent $\sim$2.5 times more time at high latitudes. Below we try and quantify the likelihood of 
 this.
 
 
@@ -370,33 +371,33 @@ is then taken to be the same, and the likelihood of a given spatial distribution
 sources can be calculated. This situation is naturally
 described by a biased binomial distribution with a fixed number of events. Suppose
 a total of $K$ FRBs are observed in a given survey. We can ask the question, what is the probability of 
-seeing $M$ events in the high region and ($K$-$M$) events in the lower region?
+seeing $M$ events in the high region and ($K-M$) events in the lower region?
 This probability can be calculated % Should I include >M in one region?
 as 
 
 \begin{equation}
 \label{eq-binomial}
-\textup{P}(M | \, {K}, p) =  \binom{K}{M} \, p^{M} (1-p)^{K-M} 
+P(M | \, {K}, p) =  \binom{K}{M} \, p^{M} (1-p)^{K-M} 
 \end{equation}
 
 \noindent where $p$ is the probability that an event happens to show up in the 
 high region. In a survey where more time is spent on one part of the 
-sky than the other, $p=(1 + \alpha)/\, \alpha$, where $\alpha$ is the ratio of 
-time spent in the high-lat region vs. the intermediate region. In the case of the HTRU 
+sky than the other, $p=\alpha/(\alpha+1)$, where $\alpha$ is the ratio of 
+time spent in the high-latitude region vs. the intermediate region. In the case of the HTRU 
 survey, $K$=9 and since none were found 
 in the low-latitude region, $M$=9. Roughly 2500 hours were spent searching the upper region
-and $\sim1000$ hours were spent at $|b| < 15\degree$, giving $\alpha=0.4$. Using Equation 
+and $\sim1000$ hours were spent at $|b| < 15\degree$, giving $\alpha=2.5$. Using Equation 
 \ref{eq-binomial}, this outcome is only $\sim5\%$ unlikely. 
 
-The problem is given a quasi-Bayesian treatment in 
-\cite{2014ApJ...789L..26P} which gives the following.
+The problem is given a quasi-Bayesian treatment by
+\cite{2014ApJ...789L..26P}, which gives the following.
 
 \begin{equation}
 \label{eq-petroff}
 \textup{P}(N | \,M) =  \alpha^{N} (1 + \alpha)^{-(1+M+N)} \frac{(M+N)!}{M!N!}
 \end{equation}
 
-\noindent This gives a probability of $\sim$3.5$\%$. This method 
+\noindent This gives a probability of $\sim$3.5$\%$, using all nine FRBs. This method 
 is Bayesian in the sense that they marginalize over the unknown rate 
 and calculate a likelihood, but they then calculate a confidence 
 and do not look at a posterior.  
@@ -423,11 +424,11 @@ and do not look at a posterior.
 %calculation. 
 
 The most obvious difference between the approach we have offered (biased coin-flip) 
-and the quasi-Bayesian method is that we take $M$+$N$ to be fixed. It follows to ask 
+and the quasi-Bayesian method is that we take $M+N$ to be fixed. It follows to ask 
 whether or not we \textit{should} regard the total number of FRBs as ``given"? 
 We believe the answer is yes, since this is one of the few quantities that we 
-have actually measured, along with M and N. What we are really trying 
-to infer is how much larger $\mu_{high}$ is than $\mu_{low}$, so these 
+have actually measured, along with $M$ and $N$. What we are really trying 
+to infer is how much larger $\mu_{\textup{high}}$ is than $\mu_{\textup{low}}$, so these 
 rates should not be marginalized over. 
 %We calculate $P(\mu_{high} \le \alpha \mu_{low} | N, M)$
 %and find it to be 99.5$\%$ if you assume flat priors on $\mu_{high}$ and $\mu_{low}$
@@ -449,7 +450,7 @@ of the posterior probabilities for the two models,
    
    
 \begin{equation}
-	\frac{P(\mathrm{Model}~1|N,K)}{P(\mathrm{Model}~2|N,K)} = \frac{P(N|\mathrm{Model}~1,K)}{P(N|\mathrm{Model}~2,K)},
+	\frac{P(\mathrm{Model}~1|M,K)}{P(\mathrm{Model}~2|M,K)} = \frac{P(M|\mathrm{Model}~1,K)}{P(M|\mathrm{Model}~2,K)},
 \end{equation}
 
 \noindent where we have assumed equal prior weights for the two models. 
@@ -458,10 +459,10 @@ marginalizing over the unknown probability $p$ in the case of Model~2,
 this ratio is easily calculated to be
 
 \begin{equation}
-\frac{P(N|\mathrm{Model}~1,K)}{P(N|\mathrm{Model}~2,K)} = (K + 1) \, \binom{K}{N} \, p_1^N \, \left(1 - p_1\right)^{K-N}.
+\frac{P(M|\mathrm{Model}~1,K)}{P(M|\mathrm{Model}~2,K)} = (K + 1) \, \binom{K}{M} \, p_1^M \, \left(1 - p_1\right)^{K-M}.
 \end{equation}
 
-\noindent For the observations discussed above with $N = K = 9$ 
+\noindent For the observations discussed above with $M = K = 9$ 
 and $\alpha = 2.5$, we find a ratio of $0.48$, so there is
 no strong preference for either of the two models.
 
@@ -476,25 +477,25 @@ has meant that dealing with their statistics can be non-trivial. In
 the case of repetition, we remind the reader that several non-cataclysmic 
 models for FRBs are expected to repeat. In the case of supergiant 
 pulses from pulsars, SGR radio flares, or even Galactic flare stars, it is possible 
-that this repetition would by non-stationary and might exhibit strong correlations 
+that this repetition would be non-stationary and might exhibit strong correlations 
 in time. We have shown that if the repetition had some associated flicker noise 
-and its powerspectrum were 1/$f^\gamma$, then one should expect the repetition 
+and its powers pectrum were 1/$f^\gamma$, then one should expect the repetition 
 rate to be higher immediately after the initial FRB detection. Therefore follow-up 
 observations to archival discoveries that take place years or 
 months after the first event would not provide strong upper limits. 
-This also means that if no burst is found in a given beam after some 
+This would also mean that if no burst is found in a given beam after some 
 integration time, then it is unlikely that one will occur in the following integration, and therefore 
-a new pointing should be searched. In other words, shallow fast surveys are favourable. 
+a new pointing should be searched. In other words, shallow fast surveys would be favourable. 
 
-In section \ref{latitude} we offered a simple way of quantifying the 
+In Section \ref{latitude} we offered a simple way of quantifying the 
 latitudinal dependence of FRBs with a binomial distribution. This 
 is akin to a biased coin flip, in which we ask ``what is the probability of 
 M bursts being found in one region and N bursts in its complement, given 
-$\alpha$ times more time was spent in the latter". Like \cite{2015arXiv150500834R} we argue
+$\alpha$ times more time was spent in the former". Like \cite{2015arXiv150500834R} we argue
 that the jury is still out on the severity of the latitudinal 
 dependence. With current data the preference for FRBs to 
 be discovered outside of the plane seems consistent with
-sky-temperature effects and increased scattering. 
+sky-temperature effects and increased scattering, or even pure chance. 
 Whether or not more sophisticated explanations 
 (e.g., \citealt{2015MNRAS.451.3278M}) are required remains to be seen. 
 We also provided a Bayesian framework for model comparison,
