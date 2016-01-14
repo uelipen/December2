@@ -58,15 +58,15 @@ and had a pink or red spectrum.
 Repetition and its statistics have implications for observing strategy, generally favouring 
 shallow wide-field surveys, since a repeat rate of zero does not depend on survey depth. 
 We also discuss the statistics of the apparent latitudinal dependence of FRBs, and offer
-a simple method for calculating the significance of this effect. It is shown how 
+a simple method for calculating the significance of this effect.  We provide a generalized Bayesian framework for addressing 
+this problem, which allows for direct model comparison. 
+It is shown how 
 the evidence for a steep latitudinal gradient of the FRB rate is less strong than initially suggested 
 and simple explanations like increased scattering and sky temperature 
 in the plane are sufficient to decrease the low-latitude burst rate, given current data.
 The reported dearth of bursts near the plane is further complicated if FRBs have 
 non-Poissonian repetition, since in that case the event rate inferred from observation
-depends on survey depth. We provide a generalized Bayesian framework for addressing 
-this problem, which allows for direct model comparison. 
-
+depends on survey depth.
 \end{abstract}
 \begin{keywords}
 \end{keywords}
@@ -112,7 +112,7 @@ and observing strategy of upcoming surveys. In Section \ref{repeat} we explore t
 consequences of repeating FRBs in the case where their 
 burst rate is non-Possionian and exhibits a 1/$f$ power spectrum, 
 or pink noise. We also investigate the claims of \cite{2015arXiv150701002M}
-that FRB 140514 could have been the same source as FRB 100220, 
+that FRB 140514 could have been the same source as FRB 110220, 
 and comment on its implications. In Section \ref{rate} we
 discuss the impact of FRB repetition on survey strategy. In Section \ref{latitude}
 we discuss the statistical treatment of the apparent latitudinal dependence 
@@ -213,7 +213,12 @@ to the actual observations carried out.
 We run a simple Monte Carlo 
 simulation with one sample per hour and a probability of 0.5 
 that a given sample has a burst in it. The repeat rate of once per two hours
-is chosen arbitrarily and should not affect the comparison. 
+is chosen arbitrarily and should not affect the comparison. To get the 
+1$/f^{\gamma}$ distribution we
+take a Gaussian time stream centred on 0 and move to Fourier space, then 
+multiply by $f^{\gamma / 2}$, which gives a power spectrum with the desired shape. 
+We then inverse Fourier transform back to get the pink or red time stream.
+We then take positive values to be ``on" pulses, and negative values to be ``off" pulses. 
 In the stationary Poisson case, the rate of bursts in 
 the immediate follow-up is the same as the multi-year follow-up 
 since all times are 
@@ -266,7 +271,7 @@ In general we expect the true rate of FRBs to be lower than what is
 reported due to non-publication bias: If archival data are searched and 
 nothing is found, it is less likely to be published than if something is found. 
 That said, using the rate calculated by \cite{2015arXiv150500834R} and following
-the procedure of \cite{2015arXiv150701002M}, we find the likelihood of this to be 
+the procedure of \cite{2015arXiv150701002M}, we find the likelihood of finding a new burst to be 
 between 0.25-2.5$\%$.
 
 Given the relatively low probability of finding 
@@ -279,19 +284,26 @@ repeat period? Another way of asking this question is what is the probability of
  some number of repetitions during the 110 hours, given a repeat rate. The answer to 
 this question depends strongly on the power spectrum's shape. For the sake of example, if the average 
 repeat rate is once per two hours, then the probability of one repeat or fewer in the Poisson
-case is effectively zero. With a pink distribution it is closer to $34\%$. This is 
-shown in Figure \ref{FIG-hist}. 
+case is effectively zero. With a pink distribution it is closer to $5\%$, even though 
+the expected number would be 55. This is 
+shown in Figure \ref{FIG-hist} in which we plot the probability of seeing zero or one repeat burst
+(the two options for FRB 140514), given some average repetition period, $P$. While 
+we remain agnostic about the relationship between 140514 and 110220, with 
+non-Poissonian repetition it is possible to have a relatively high repeat rate 
+and to see either one or zero repeat bursts in several days of observation. 
+
 
 \begin{figure}
   \centering
-   \includegraphics[trim={0in, 0in, 0in, 0in}, width=0.43\textwidth, height=0.22\textwidth]{110_hours_followup.png}
-   \caption{Histogram of a 110-hours mock follow-up observation assuming an average repeat rate of 
-   once per two hours, using two different models 
-   for the repetition statistics. The $y$-axis gives the probability of seeing 
-   $N$ repetitions during the 110-hours observation.
-   A 1$/f$ distribution (red) gives $\sim34\%$ probability of seeing one or zero events 
-   (the two options, depending on the treatment of FRB 140514), 
-   which is nearly impossible in the Poisson case (grey).}
+   \includegraphics[trim={0in, 0in, 0in, 0in}, width=0.43\textwidth, height=0.3\textwidth]{repeat_rate_limit.png}
+   \caption{The probability of seeing zero (blue curve) or one (red curve) repeat burst
+   in 110 hours of followup, assuming a 1/$f$ distribution. This came 
+   from a simple Monte Carlo in which a pink distribution was generated with one sample per hour, 
+   and we asked how many bursts were seen in 110 samples. Thousands of 110-hour realizations
+   were then averaged for each repeat period, $P$. 
+   Even with an average 
+   repeat rate of once every two hours, there is still a 5$\%$ chance of seeing one or
+   fewer bursts, despite the expected value of 55.}
    \label{FIG-hist}
 \end{figure}
 
